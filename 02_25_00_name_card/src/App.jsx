@@ -34,6 +34,7 @@ function App() {
 
   const pokemons = ["Bulbasaur", "Charmander", "Squirtle"]
   const elements = pokemons.map(monster => `<p>${monster}</p>`)
+  console.log(elements)
 
   return (
     <div className="App">
