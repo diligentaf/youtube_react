@@ -51,35 +51,51 @@ function App() {
 
   const cards = [
     {
+      id: 1,
       img: '1.png',
-      rating: '8.1',
-      reviewCount: 6,
       country: 'USA',
       title: 'Life Lessons with Katie Zaferes',
+      description: "Interested in becoming a wedding photographer? For beginner and experienced.. blah blah blah... photographers alike, join us in learning techniques required to leave the happy... blah blah .. memories that'll last a lifetime.",
+      stats: {
+        rating: 9.0,
+        reviewCount: 21,
+      },
       price: 136,
     },
     {
+      id: 2,
       img: '2.png',
-      rating: '9.0',
-      reviewCount: 6,
       country: 'USA',
       title: 'Life Lessons with Katie Zaferes',
+      description: "Interested in becoming a wedding photographer? For beginner and experienced.. blah blah blah... photographers alike, join us in learning techniques required to leave the happy... blah blah .. memories that'll last a lifetime.",
+      stats: {
+        rating: 0.2,
+        reviewCount: 19,
+      },
       price: 136,
     },
     {
+      id: 3,
       img: '3.png',
-      rating: '3.0',
-      reviewCount: 200,
       country: 'USA',
       title: 'Life Lessons with Katie Zaferes',
+      description: "Interested in becoming a wedding photographer? For beginner and experienced.. blah blah blah... photographers alike, join us in learning techniques required to leave the happy... blah blah .. memories that'll last a lifetime.",
+      stats: {
+        rating: 8.9,
+        reviewCount: 212,
+      },
       price: 136,
     },
     {
+      id: 4,
       img: 'cat.png',
-      rating: '5.0',
-      reviewCount: 5,
       country: `Good ${timeOfDay}`,
       title: 'Lesson with Kiki star',
+      description: "Interested in becoming a wedding photographer? For beginner and experienced.. blah blah blah... photographers alike, join us in learning techniques required to leave the happy... blah blah .. memories that'll last a lifetime.",
+      stats: {
+        rating: 6.5,
+        reviewCount: 30,
+      },
       price: 136,
     },
   ]
@@ -88,8 +104,8 @@ function App() {
     return (
       <Card
         img={card.img}
-        rating={card.rating}
-        reviewCount={card.reviewCount}
+        rating={card.stats.rating}
+        reviewCount={card.stats.reviewCount}
         country={card.country}
         title={card.title}
         price={card.price}
