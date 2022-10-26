@@ -28,6 +28,7 @@ nav {
 }
 
 .card {
+  margin: 2em 0em 2em 2em;
   width: 175px;
   font-size: 12px;
   display: inline-block;
